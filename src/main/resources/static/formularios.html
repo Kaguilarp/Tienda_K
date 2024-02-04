@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Techshop</title>
+        <meta charset="UTF-8">
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+        <link href="css/menu.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header class="header">            
+            <nav class="nav">
+                <h1><a href="index.html"class="nav-link logo">Technoshop</a></h1>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item"><a href="iframe.html"class="nav-link nav-menu-link" >&triangleleft;</a></li>
+                    <li class="nav-menu-item"><a href="audios.html"class="nav-link nav-menu-link">&triangleleft;</a></li>
+                    <li class="nav-menu-item"><a href="audios.html"class="nav-link nav-menu-link">Audios</a></li>
+                    <li class="nav-menu-item"><a href="videos.html"class="nav-link nav-menu-link">Video</a></li>
+                    <li class="nav-menu-item"><a href="iframe.html"class="nav-link nav-menu-link">Iframe</a></li>
+                    <li class="nav-menu-item"><a href="formularios.html"class="nav-link nav-menu-link">Formularios</a></li>
+                </ul>
+                                                       
+            </nav>
+        </header>
+        <aside>
+            <h2 class="noticia">Uso de formularios</h2>
+            <p>Uso de etiquetas para formularios</p>
+        </aside>
+        <section>
+            <article>
+                <h3>Registro de usuarios</h3>
+                <form action="/usuario/registro" method="POST"> 
+                    Usuario: <input type="text" name="username" value="" size="15" required /><br>
+                    Contraseña: <input type="password" name="password" value="" size="10" /><br>
+                    Nombre: <input type="text" name="nombre" value="" size="35" /><br>
+                    Correo: <input type="email" name="nombre" placeholder="correo@correo.com" size="35" /><br>
+                    Edad: <input type="number" name="edad" value="0" min="18" max="100" /><br>
+                    Fecha activo: <input type="date" name="fActivo" value="0" /><br>
+                    Foto:<input type="file" name="foto" accept="image/*" /><br>
+                    Nivel Educativo: <select name="nivel">
+                        <option value="0" >Primaria incompleta</option>
+                        <option value="1" >Primaria completa</option>
+                        <option value="2" >Secundaria incompleta</option>
+                        <option value="3" >Secundaria completa</option>
+                    </select><br>
+                    Zona dentro de la GAM<input type="radio" name="zona" value="1" /> Zona fuera de la GAM<input type="radio" name="zona" value="2" /><br>
+                    Declaro bajo juramento que esta información es veraz <input type="checkbox" name="juramt" required /><br>      
+                    
+                    <input type="submit" value="registro" name="btnRegistro" />
+                    
+                </form>
+            </article>
+           
+            <br>
+            <br>
+        </section>
+        
+        <p>Última Línea</p>
+        
+        <footer>
+            <p>Derechos reservados &copy;2023</p>
+        </footer>
+    </body>
+</html>
+
+    

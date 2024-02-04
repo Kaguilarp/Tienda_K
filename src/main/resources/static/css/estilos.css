@@ -48,14 +48,3 @@ tbody tr:nth-child(even){
     background-color: black;
     color: white;
 }
-
-a{
-    text-decoration: none;
-    background-color: green;
-    color: white;    
-}
-
-a:hover{
-    background-color: black;
-    color: white;    
-}
