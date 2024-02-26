@@ -1,50 +1,55 @@
-
 /* 
-    Created on : 4 feb 2024, 00:32:18
-    Author     : FamMuñozAguilar
+    Created on : 22 ene 2024, 19:53:14
+    Author     : adrianchavarriamora
 */
+
 footer p{
     background-color: blue;
-    color: white;     
+    color:white;
 }
+
 h1,h2{
-    text-align: center;    
+    text-align: center;
 }
 
 h1{
     background-color: black;
-    color: white;   
-    font-size: 26px;
+    color: white;
+    font-size: 32px;
 }
 
 h2{
     background-color: green;
-    color: yellow;  
+    color: yellow;
     font-size: 24px;
 }
 
 .aviso{
-    background-color: greenyellow;
-    color: white;         
+    background-color: green;
+    color:white;
 }
+
 #btnAlgo{
-    
+
 }
 
 table{
     width: 90%;
 }
+
 thead tr{
     background-color: black;
-    color: wheat;        
+    color:white;
+
 }
 
 tbody tr:nth-child(odd){
     background-color: blue;
-    color: white;
+    color:white;
 }
 
 tbody tr:nth-child(even){
     background-color: black;
-    color: white;
+    color:white;
 }
+

@@ -1,11 +1,10 @@
-
 /* 
-    Created on : 4 feb 2024, 00:32:18
-    Author     : FamMuñozAguilar
+    Created on : 22 ene 2024, 19:53:14
+    Author     : adrianchavarriamora
 */
 
 *{
-    margin: 0;
+    margin:0;
     box-sizing: border-box;
 }
 
@@ -15,12 +14,12 @@ body{
 }
 
 .header{
-    background-color: #076AF0;
+    background-color: #076AF0; 
     height: 80px;
     position: fixed;
     width: 100%;
-    top: 0;
-    left: 0;
+    top:0;
+    left:0;
 }
 
 .nav{
@@ -28,8 +27,9 @@ body{
     justify-content: space-between;
     margin: 0 auto;
 }
+
 .nav-link{
-    color: white;
+    color:white;
     text-decoration: none;
 }
 
@@ -37,7 +37,7 @@ body{
     font-size: 30px;
     font-weight: bold;
     padding: 0 40px;
-    line-height: 80px;    
+    line-height: 80px;
 }
 
 .nav-menu{
@@ -52,16 +52,15 @@ body{
     margin: 0 10px;
 }
 
-.nav-menu-link{    
+.nav-menu-link{
     padding: 8px 12px;
     border-radius: 10px;
 }
 
-.nav-menu-link:hover {
+.nav-menu-link:hover{
     background-color: #024070;
     padding: 8px 12px;
     border-radius: 10px;
     transition: 0.5s;
 }
-    
 
