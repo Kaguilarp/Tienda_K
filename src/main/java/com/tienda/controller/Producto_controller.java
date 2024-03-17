@@ -2,6 +2,7 @@
 package com.tienda.controller;
 
 import com.tienda.domain.Producto;
+import com.tienda.service.Categoria_service;
 import com.tienda.impl.FireBaseStorageImpl;
 import com.tienda.service.Producto_service;
 import lombok.extern.slf4j.Slf4j;
@@ -22,10 +23,20 @@ public class Producto_controller {
     
     @Autowired
     private Producto_service producto_service;
-    @GetMapping ("/listado")
+    
+    @Autowired
+    private Categoria_service categoria_service;
+    
+    @GetMapping ("/listado")        
+    
     public String inicio (Model model) {
+        
+        var categorias =categoria_service.getCategorias(false);
+        model.addAttribute("categorias", categorias);
+        
         var productos =producto_service.getProductos(false);
         model.addAttribute("productos", productos);
+        
         model.addAttribute("totalProductos", productos.size());
         return "/producto/listado";
     }
@@ -61,7 +72,10 @@ public class Producto_controller {
     @GetMapping("/modificar/{idProducto}")
     public String productoModificar(Producto producto, Model model) {
         producto = producto_service.getProducto(producto);
+        var categorias = categoria_service.getCategorias(false);
+        model.addAttribute("categorias", categorias);
         model.addAttribute("producto", producto);
+        
         return "/producto/modifica";
     }
             
